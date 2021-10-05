@@ -1,0 +1,3 @@
+- CUDA単体での初歩的な実装の学習
+- 続きはこっち
+    - [CUDA-ROS](https://github.com/7oei/CUDA-ROS)

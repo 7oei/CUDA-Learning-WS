@@ -1,3 +1,6 @@
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <cuda.h>
@@ -12,6 +15,7 @@ __global__ void vector_add(float *out, float *a, float *b, int n) {
 }
 
 int main(){
+    cv::Mat mat1;
     float *a, *b, *out;
     float *d_a, *d_b, *d_out;
     // Allocate memory
